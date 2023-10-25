@@ -4,6 +4,10 @@ from langchain.agents import initialize_agent, Tool, AgentType
 
 from tools.tools import get_profile_url
 
+HARDCODED_PROFILE_URL = (
+    "https://i.pinimg.com/736x/a9/87/07/a987073a7bc3345214980d8ee17f0700.jpg"
+)
+
 
 def lookup(name: str) -> str:
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
